@@ -46,9 +46,9 @@ int see_more()
 	{
 		if(c == 'q')				
 		 return 0;
-		if(c = ' ')
+		if(c == ' ')
 		 return PAGELEN;
-		if(c = '\n')
+		if(c == '\n')
 		 return 1;
 	}
 	return 0;
