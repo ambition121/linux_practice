@@ -11,7 +11,7 @@ Organization:  Linux
 =====================================================================================
  */
 
-
+#include<string.c>
 #include<stdio.h>
 #include<sys/types.h>
 #include<stdlib.h>
