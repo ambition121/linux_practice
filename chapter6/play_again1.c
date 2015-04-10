@@ -44,7 +44,7 @@ Organization:  Linux
         case 'N': 
         case EOF: return 1;
         default:
-                  printf("nnot understand %c, ", input);
+                  printf("cannot understand %c, ", input);
                   printf("Please type y or no\n");
         }
         }
