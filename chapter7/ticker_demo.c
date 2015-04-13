@@ -20,7 +20,7 @@ int main()
     void countdown(int);
 
     signal(SIGALRM, countdown);
-    if ( set_ticker(2000) == -1 )
+    if ( set_ticker(3000) == -1 )
         perror("set_ticker");
     else
         while( 1 )
