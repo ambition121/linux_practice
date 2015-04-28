@@ -21,7 +21,10 @@ main()
 
     printf("about to sleep for 4 seconds\n");
     signal(SIGALRM, wakeup);        /*  catch iter(*/
-    alarm(4);               /*  set clock(*/
+    alarm(4); /*  set clock(*/
+
+    
+
     pause();                /*  freeze here*/
     printf("Morning so soon?\n");       /*  back to works*/
 }

@@ -23,8 +23,11 @@ int main()
     if ( set_ticker(3000) == -1 )
         perror("set_ticker");
     else
-        while( 1 )
-            pause();
+        while( 1 ){
+            sleep(1);
+            printf("hello\n");
+}
+    pause();
     return 0;
 }
 
@@ -33,6 +36,9 @@ void countdown(int signum)
     static int num = 10;
     printf("%d ..", num--);
     fflush(stdout);
+    
+
+
     if ( num < 0 ){
         printf("DONE!\n");
         exit(0);

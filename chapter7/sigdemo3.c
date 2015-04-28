@@ -41,8 +41,11 @@ main(int ac, char *av[])
 
 void inthandler(int s)
 {
+  //  void (*prev_qhandler)();
     printf(" Received signal %d .. waiting\n", s );
-    sleep(2);
+    sleep(4);
+//    prev_qhandler = signal(SIGQUIT,SIG_IGN);
+ //   signal(SIGQUIT,prev_qhandler);
     printf("  Leaving inthandler \n");
 }
 
